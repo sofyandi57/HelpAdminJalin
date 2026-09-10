@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# PyInstaller build artifacts
+build/
+dist/
+
+# App runtime output
+output/
+
+# Contoh dokumen internal (data vendor/harga asli - jangan diunggah)
+Contoh PO/
