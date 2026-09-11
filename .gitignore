@@ -11,3 +11,6 @@ output/
 
 # Contoh dokumen internal (data vendor/harga asli - jangan diunggah)
 Contoh PO/
+
+# Paket offline portable (Python + library + Tesseract dibundel, ~600MB - tidak untuk git)
+OCR-PO-Extractor-Offline/
