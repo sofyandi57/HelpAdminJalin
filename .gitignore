@@ -15,8 +15,8 @@ Contoh PO/
 # Paket offline portable (Python + library + Tesseract dibundel, ~600MB - tidak untuk git)
 OCR-PO-Extractor-Offline/
 
-# Aplikasi audio-to-text-app punya git repo sendiri (repo terpisah: audiototext)
-audio-to-text-app/
-
 # Binary .exe hasil build - didistribusikan manual, bukan lewat git
 *.exe
+
+# Konfigurasi lokal Claude Code (launch.json, dll) - tidak perlu ikut ter-share
+.claude/
