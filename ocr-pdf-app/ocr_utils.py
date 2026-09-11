@@ -7,10 +7,16 @@ import pytesseract
 
 
 def find_tesseract_cmd():
-    """Cari lokasi tesseract.exe: PATH dulu, lalu lokasi instalasi default Windows."""
+    """Cari lokasi tesseract.exe: bundel portable dulu (../tesseract/tesseract.exe,
+    dipakai oleh paket offline), lalu PATH, lalu lokasi instalasi default Windows."""
+    portable = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "tesseract", "tesseract.exe")
+    if os.path.isfile(portable):
+        return os.path.abspath(portable)
+
     found = shutil.which("tesseract")
     if found:
         return found
+
     default_paths = [
         r"C:\Program Files\Tesseract-OCR\tesseract.exe",
         r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
